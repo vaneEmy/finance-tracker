@@ -17,6 +17,8 @@ gem 'twitter-bootstrap-rails'
 gem 'jquery-rails'
 #gem 'devise-bootstrap-views'
 gem 'devise-bootstrap-views', '~> 1.0'
+# Real-time, stock data and historical pricing
+gem "stock_quote"
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
