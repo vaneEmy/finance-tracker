@@ -16,9 +16,17 @@
         </div>
     <% end %>
 </div>
-
-<div class="well results-block">
-    <strong>Symbol: </strong><%= @stock.ticker %>
-    <strong>Name: </strong><%= @stock.name %>
-    <strong>Price: </strong> <%= @stock.price%>
-</div>
+<% if @stock %>
+    <div id='stock-lookup-results' class='well results-block'>
+        <strong>Symbol:</strong> <%= @stock.ticker %>
+        <strong>Name:</strong> <%= @stock.name %>
+        <strong>Price:</strong> <%= @stock.price %>
+    </div>
+<% else %>
+    <% @stock = Stock.new_from_lookup('GOOG') %>
+        <div id='stock-lookup-results' class='well results-block'>
+        <strong>Symbol:</strong> <%= @stock.ticker %>
+        <strong>Name:</strong> <%= @stock.name %>
+        <strong>Price:</strong> <%= @stock.price %>
+    </div>
+<% end %>
