@@ -8,24 +8,29 @@ To run the project, you should have:
 
 - Postgresql 10.5
 
+Configuration
 
-* Configuration
+    Create an ENV variable for PASSWORD and USER_NAME in order to connect your database:
 
-Create an ENV variable for PASSWORD and USER_NAME in order to connect your database:
+        USER_NAME="user_name"
 
-    USER_NAME="user_name"
+        PASSWORD="password"
 
-    PASSWORD="password"
-    
-clone the repository and execute the following command:
-    `bundle install`
+    clone the repository and execute the following command:
 
-Database creation
-    Create a database: finance_tracker_development
+        `bundle install`
 
-Database initialization
-    To run migrations
-    `rails db:migrate`
-    To run the app:
-    `rails server`
+    Database creation
+
+        Create a database: finance_tracker_development
+
+    Database initialization
+
+        To run migrations
+
+        `rails db:migrate`
+
+        To run the app:
+
+        `rails server`
 
